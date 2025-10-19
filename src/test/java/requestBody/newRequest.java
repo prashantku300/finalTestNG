@@ -14,7 +14,7 @@ public class newRequest {
 	
 	
 	
-	@Test
+	@Test(priority = 0, description = "This code is used to pass payload through Code",groups = "Sanity", invocationCount = 1)
 	public void reqBody() {
 		Location l= new Location();
 		allRequest req=new allRequest();
