@@ -1,13 +1,17 @@
 package pojo;
 
+import java.util.List;
+
 public class allRequest {
+	
+	Location Location= new Location();
 	
 	private Location location;
 	private int  accuracy;
 	private String name;
 	private String phone_number;
 	private String address;
-	private String types;
+	private List<String> types;
 	private String website;
 	private String language;
 	
@@ -41,10 +45,10 @@ public class allRequest {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getTypes() {
+	public List<String> getTypes() {
 		return types;
 	}
-	public void setTypes(String types) {
+	public void setTypes(List<String> types) {
 		this.types = types;
 	}
 	public String getWebsite() {
