@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="LoginTest.loginTest">
         <methods>
@@ -11,5 +12,29 @@
         </methods>
       </class> <!-- LoginTest.loginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="LoginTest.loginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- LoginTest.loginTest -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+  <test thread-count="5" parallel="tests" name="edgeTest(failed)">
+    <parameter name="browser" value="EDGE"/>
+    <classes>
+      <class name="LoginTest.loginTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="invalidLogin"/>
+        </methods>
+      </class> <!-- LoginTest.loginTest -->
+    </classes>
+  </test> <!-- edgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

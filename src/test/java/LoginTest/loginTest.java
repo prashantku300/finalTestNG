@@ -15,6 +15,7 @@ public class loginTest extends baseSetup {
 		lp.enterUsername("student");
 		lp.enterPassword("Password123");
 		lp.clickBtn();
+		
 		String successmsg=lp.validateLogin();
 		Assert.assertTrue(successmsg.contains("Logged In Successfully"), "Login Failed!");
 		
