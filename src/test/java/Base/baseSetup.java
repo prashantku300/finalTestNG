@@ -10,7 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class baseSetup {
 	
-	WebDriver driver;
+public WebDriver driver;
 	
 	@BeforeTest
 	public void setUp() {
