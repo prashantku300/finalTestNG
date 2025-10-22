@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
@@ -43,9 +44,19 @@ public WebDriver driver;
 		driver.get("https://practicetestautomation.com/practice-test-login/");
 		
 	}
+     
+     public void onTestFails(ITestResult result) {
+
+ 	}
+ 	
 	
 	@AfterTest
 	public void tearDown() {
 			driver.quit();
 	}
+
+	
+	
+	
+	
 }

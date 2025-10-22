@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 20 22:10:53 IST 2025</td>
+<td>Started on:</td><td>Wed Oct 22 21:18:52 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23329 ms)</td>
+<tr><td>Total time:</td><td>17 seconds (17085 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='LoginTest.loginTest.invalidLogin()'><b>invalidLogin</b><br>Test class: LoginTest.loginTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;username&apos;]&quot;}
-  (Session info: MicrosoftEdge=141.0.3537.85)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Logged In Successfully&apos;)]&quot;}
+  (Session info: MicrosoftEdge=141.0.3537.92)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [795aa428246b164ed9c19a2119e260c7, findElement {value=//input[@id=&apos;username&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 141.0.3537.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49827}, msedge: {msedgedriverVersion: 141.0.3537.85 (229e1a17645e..., userDataDir: C:\Users\prash\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 141.0.3537.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 795aa428246b164ed9c19a2119e260c7
+Command: [6dcf4528071ae5717c4f318b610fb964, findElement {using=xpath, value=//h1[contains(text(),&apos;Logged In Successfully&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 141.0.3537.92, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57197}, msedge: {msedgedriverVersion: 141.0.3537.92 (180f8c4bc303..., userDataDir: C:\Users\prash\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57197/devtoo..., se:cdpVersion: 141.0.3537.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6dcf4528071ae5717c4f318b610fb964
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -97,23 +97,23 @@ Session ID: 795aa428246b164ed9c19a2119e260c7
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at loginPage.testLoginPage.enterUsername(testLoginPage.java:19)
-	at LoginTest.loginTest.invalidLogin(loginTest.java:28)
+	at loginPage.testLoginPage.validateLogin(testLoginPage.java:36)
+	at LoginTest.loginTest.invalidLogin(loginTest.java:32)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace784579853", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace784579853'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;username&apos;]&quot;}
-  (Session info: MicrosoftEdge=141.0.3537.85)
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1279480200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1279480200'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Logged In Successfully&apos;)]&quot;}
+  (Session info: MicrosoftEdge=141.0.3537.92)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
 Build info: version: &apos;4.37.0&apos;, revision: &apos;3c1da1e342&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [795aa428246b164ed9c19a2119e260c7, findElement {value=//input[@id=&apos;username&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 141.0.3537.85, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:49827}, msedge: {msedgedriverVersion: 141.0.3537.85 (229e1a17645e..., userDataDir: C:\Users\prash\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 141.0.3537.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 795aa428246b164ed9c19a2119e260c7
+Command: [6dcf4528071ae5717c4f318b610fb964, findElement {using=xpath, value=//h1[contains(text(),&apos;Logged In Successfully&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 141.0.3537.92, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:57197}, msedge: {msedgedriverVersion: 141.0.3537.92 (180f8c4bc303..., userDataDir: C:\Users\prash\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57197/devtoo..., se:cdpVersion: 141.0.3537.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6dcf4528071ae5717c4f318b610fb964
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -128,8 +128,8 @@ Session ID: 795aa428246b164ed9c19a2119e260c7
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
-	at loginPage.testLoginPage.enterUsername(testLoginPage.java:19)
-	at LoginTest.loginTest.invalidLogin(loginTest.java:28)
+	at loginPage.testLoginPage.validateLogin(testLoginPage.java:36)
+	at LoginTest.loginTest.invalidLogin(loginTest.java:32)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -152,7 +152,7 @@ Session ID: 795aa428246b164ed9c19a2119e260c7
 	at java.base/java.lang.Thread.run(Thread.java:1570)
 </pre></div></td>
 <td>0</td>
-<td>LoginTest.loginTest@6e2aa843</td></tr>
+<td>LoginTest.loginTest@5e3f861</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -165,8 +165,8 @@ Session ID: 795aa428246b164ed9c19a2119e260c7
 <tr>
 <td title='LoginTest.loginTest.testValidLogin()'><b>testValidLogin</b><br>Test class: LoginTest.loginTest</td>
 <td></td>
-<td>1</td>
-<td>LoginTest.loginTest@6e2aa843</td></tr>
+<td>2</td>
+<td>LoginTest.loginTest@5e3f861</td></tr>
 </table><p>
 </body>
 </html>
